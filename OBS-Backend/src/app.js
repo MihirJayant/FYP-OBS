@@ -17,6 +17,7 @@ var { generalLimiter } = require("./middleware/rateLimiter");
 var sanitiseInput = require("./middleware/sanitise");
 
 const app = express();
+app.set("trust proxy", 1);
 
 app.use(helmet({ crossOriginResourcePolicy: false }));
 
