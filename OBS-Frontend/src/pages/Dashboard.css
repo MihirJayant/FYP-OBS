@@ -1,0 +1,139 @@
+/* Dashboard Modern Styles */
+
+.dashboard-page {
+    background: #f5f6fa;
+    min-height: 100vh;
+  }
+  
+  /* Card animations */
+  .dash-card {
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .dash-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1) !important;
+  }
+  
+  /* Fade in animation */
+  .fade-in {
+    animation: fadeIn 0.5s ease forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Slide up animation for stat cards */
+  .slide-up {
+    opacity: 0;
+    animation: slideUp 0.5s ease forwards;
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Profile avatar */
+  .profile-avatar {
+    flex-shrink: 0;
+  }
+  
+  .avatar-placeholder {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #e87b1c, #f39c12);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+  }
+  
+  /* Tab styling */
+  .nav-tabs .nav-link {
+    border: none;
+    color: #666;
+    font-weight: 500;
+    padding: 10px 16px;
+    border-bottom: 3px solid transparent;
+    transition: all 0.2s ease;
+  }
+  
+  .nav-tabs .nav-link:hover {
+    color: #e87b1c;
+    border-bottom-color: #fde8d0;
+  }
+  
+  .nav-tabs .nav-link.active {
+    color: #e87b1c;
+    border-bottom-color: #e87b1c;
+    background: transparent;
+  }
+  
+  /* Table improvements */
+  .table th {
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #666;
+  }
+  
+  .table td {
+    vertical-align: middle;
+  }
+  
+  .table tbody tr {
+    transition: background 0.15s ease;
+  }
+  
+  .table tbody tr:hover {
+    background-color: #fff8f0;
+  }
+  
+  /* Stat card number animation */
+  .dash-card h4 {
+    transition: color 0.2s ease;
+  }
+  
+  .dash-card:hover h4 {
+    color: #e87b1c;
+  }
+  
+  /* Completed job card */
+  .card.bg-light {
+    transition: transform 0.15s ease;
+  }
+  
+  .card.bg-light:hover {
+    transform: translateX(4px);
+  }
+  
+  /* Responsive fixes */
+  @media (max-width: 768px) {
+    .dash-card {
+      border-radius: 8px;
+    }
+  
+    .nav-tabs .nav-link {
+      padding: 8px 12px;
+      font-size: 0.85rem;
+    }
+  }
