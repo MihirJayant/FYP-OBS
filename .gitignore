@@ -4,3 +4,4 @@ uploads/
 dist/
 .DS_Store
 OBS-Admin.zip
+*.zip
